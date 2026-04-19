@@ -39,6 +39,8 @@ java p3b4 op:https://github.com/user-attachments/assets/b1b221d6-51bc-4230-883f-
 
 java p3b5 op:https://github.com/user-attachments/assets/bc6c6fd1-3766-468d-bd87-8d0532ef9c6f
 
+java p3c6 op:https://github.com/user-attachments/assets/043d7dbe-ab5c-4df9-8510-2d1705a79437
+
 
 
 
