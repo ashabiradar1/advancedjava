@@ -1,0 +1,40 @@
+//5. Write a java program for getting different colors through ArrayList interface and delete nth
+//element from the ArrayList object by using remove by index
+
+package ArrayList;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class pb5 {
+	    public static void main(String[] args) {
+	        
+	        // Create an ArrayList
+	        ArrayList<String> colors = new ArrayList<>();
+
+	        // Add elements
+	        colors.add("Red");
+	        colors.add("Blue");
+	        colors.add("Green");
+	        colors.add("Yellow");
+	        colors.add("Black");
+
+	        // Display original list
+	        System.out.println("Original List: " + colors);
+
+	        // Take input for n
+	        Scanner sc = new Scanner(System.in);
+	        System.out.print("Enter the position (n) to delete: ");
+	        int n = sc.nextInt();
+
+	        // Check valid index (1-based position)
+	        if (n > 0 && n <= colors.size()) {
+	            colors.remove(n - 1);  // convert to 0-based index
+	            System.out.println("Updated List: " + colors);
+	        } else {
+	            System.out.println("Invalid position!");
+	        }
+
+	        sc.close();
+	    }
+	}
+
