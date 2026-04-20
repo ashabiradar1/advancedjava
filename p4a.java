@@ -2,36 +2,110 @@
 //in Blue color plain font with font size of 32 using Jframe and Jlabel
 
 package swings;
+
+
+
+import java.awt.Color;
+
+import java.awt.Font;
+
 import javax.swing.*;
-import java.awt.*;
+
+
 
 public class p4a {
-	    public static void main(String[] args) {
-
-	        // Create JFrame
-	        JFrame frame = new JFrame("Swing Hello Program");
-	        frame.setSize(700, 200);
-	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-	        // Create JLabel with message
-	        JLabel label = new JLabel("Hello! VI C, Welcome to Swing Programming");
-
-	        // Set font (Plain, size 32)
-	        label.setFont(new Font("Arial", Font.PLAIN, 32));
-
-	        // Set text color to Blue
-	        label.setForeground(Color.BLUE);
-
-	        // Center the text horizontally
-	        label.setHorizontalAlignment(JLabel.CENTER);
-
-	        // Add label to frame
-	        frame.add(label);
-
-	        // Make frame visible
-	        frame.setVisible(true);
-	    }
-	}
 
 
-	    
+
+    // Constructor
+
+    p4a() {
+
+
+
+        // Create JFrame
+
+        JFrame jfrm = new JFrame("A Simple Swing Application");
+
+
+
+        // Set size
+
+        jfrm.setSize(700, 200);
+
+
+
+        // Close program when window closes
+
+        jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+
+        // Create JLabel
+
+        JLabel jlab = new JLabel(
+
+                "Hello! VI C , Welcome to Swing Programming"
+
+        );
+
+
+
+        // Set font
+
+        jlab.setFont(new Font("Verdana", Font.PLAIN, 32));
+
+
+
+        // Set Blue color
+
+        jlab.setForeground(Color.BLUE);
+
+
+
+        // Center text
+
+        jlab.setHorizontalAlignment(JLabel.CENTER);
+
+
+
+        // Add label to frame
+
+        jfrm.add(jlab);
+
+
+
+        // Make frame visible
+
+        jfrm.setVisible(true);
+
+    }
+
+
+
+    public static void main(String[] args) {
+
+
+
+        // Run Swing safely
+
+        SwingUtilities.invokeLater(new Runnable() {
+
+
+
+            public void run() {
+
+
+
+                new p4a(); // Correct object creation
+
+
+
+            }
+
+        });
+
+    }
+
+}
+
